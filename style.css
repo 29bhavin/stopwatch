@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: verdana;
 }
-  
+/* main container css */
 .container {
     display: flex;
     flex-direction: column;
@@ -13,23 +13,23 @@ body {
     height: 100vh;
     background-color: rgb(0 55 61);
 }
-  
+/* Title for staopwatch */
 h1 {
 	font-size: 50px;
     color: rgb(182 104 195 / 79%);
     text-align: center;
 }
-  
+/* Css for digitis in the stopwatch */
 .number{
     font-size: 150px;
     color: #fff;
 }
-  
+/* Css for hr min and sec text */
 .hms {
     font-size: 30px;
     color: #fffcd6;
 }
-  
+/* Css for buttons */
 #buttons {
     margin-top: 50px;
 }
@@ -48,7 +48,7 @@ h1 {
     color: white;
     font-weight: 500;
 }
-  
+/* Colors for the buttons */
 #start {
     background-color: #009779;
 }

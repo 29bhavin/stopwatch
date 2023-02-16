@@ -1,33 +1,40 @@
+// Getting buttons to check event on the them.
 let startBtn = document.getElementById('start');
 let stopBtn = document.getElementById('stop');
 let resetBtn = document.getElementById('reset');
-  
+ 
+// Setting initial timeings to zero 
 let hour = 00;
 let minute = 00;
 let second = 00;
 let count = 00;
-  
+
+// Event Listener when start button is clicked
 startBtn.addEventListener('click', function () {
     running = true;
     startStopWatch();
 });
   
+// Event Listener when stop button is clicked
 stopBtn.addEventListener('click', function () {
     running = false;
 });
   
+// Event Listener when reset button is clicked 
 resetBtn.addEventListener('click', function () {
     running = false;
     hour = 0;
     minute = 0;
     second = 0;
     count = 0;
+    //Setting clock timings to zero again
     document.getElementById('hr').innerHTML = "00";
     document.getElementById('min').innerHTML = "00";
     document.getElementById('sec').innerHTML = "00";
     document.getElementById('count').innerHTML = "00";
 });
-  
+
+// Function to check and display the increasing time on the stopwatch 
 function startStopWatch() {
     if (running) {
         count++;
