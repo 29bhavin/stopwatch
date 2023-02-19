@@ -80,6 +80,6 @@ function startStopWatch() {
         document.getElementById('min').innerHTML = minString;
         document.getElementById('sec').innerHTML = secString;
         document.getElementById('count').innerHTML = countString;
-        setTimeout(stopWatch, 10);
+        setTimeout(startStopWatch, 10);
     }
 }
